@@ -90,12 +90,12 @@
                 <pre>v1 - Initial release
 v2 - Performance improved
 v3 - No updates
-v4 - Improved UI design</pre>
+v4 - Improved UI design
+v5 - Adding FpsCapper.luau</pre>
             </div>
         </div>
 
-        <div class="script-box" id="scriptContent">loadstring(game:HttpGet("https://github.com/fiangg20/fyanhub.github.io/raw/refs/heads/main/FyanHub.luau"))()
-        </div>
+        <div class="script-box" id="scriptContent">loadstring(game:HttpGet("https://github.com/fiangg20/fyanhub.github.io/raw/refs/heads/main/FyanHub.luau"))()</div>
     </div>
 
     <script>
@@ -110,7 +110,6 @@ v4 - Improved UI design</pre>
                 : 'Close';
         });
 
-        // Copy script functionality
         function copyScript() {
             const scriptText = document.getElementById('scriptContent').innerText;
             navigator.clipboard.writeText(scriptText)
