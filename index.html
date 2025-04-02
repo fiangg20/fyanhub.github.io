@@ -86,21 +86,16 @@
 
         <div id="extraContent" class="hidden">
             <div class="changelog-box">
-                <h4>📝 Changelog:</h4>
-                <pre>v1.0 - Initial release
-v1.1 - Added copy feature
-v1.2 - Improved UI design</pre>
+                <h4>Changelog:</h4>
+                <pre>v1 - Initial release
+v2 - Performance improved
+v3 - No updates
+v4 - Improved UI design</pre>
             </div>
         </div>
 
         <div class="script-box" id="scriptContent">
-            <span>// Sample FyanHub Script</span>
-            function welcome() {
-                console.log("Selamat datang di FyanHub!");
-                alert("Halo! Script berhasil dijalankan");
-            }
-            
-            welcome();
+        loadstring(game:HttpGet("https://github.com/fiangg20/fiangg20.github.io/raw/refs/heads/main/FyanHub.luau"))()
         </div>
     </div>
 
@@ -112,8 +107,8 @@ v1.2 - Improved UI design</pre>
         toggleBtn.addEventListener('click', () => {
             extraContent.classList.toggle('hidden');
             toggleBtn.textContent = extraContent.classList.contains('hidden') 
-                ? '📂 Lainnya' 
-                : '📂 Tutup';
+                ? 'Changelog' 
+                : 'Close';
         });
 
         // Copy script functionality
