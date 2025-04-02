@@ -1,8 +1,9 @@
+loadstring(game:HttpGet("https://github.com/fiangg20/fyanhub.github.io/raw/refs/heads/main/FpsCapper.luau"))()
 if game.CoreGui:FindFirstChild("FyanHubCore") then
 	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "FyanHub ℹ️",Text = "GUI Already loaded, rejoin to re-execute",Duration = 5;})
 	return
 end
-local version = 4
+local version = 5
 _G.AntiFlingToggled = false
 
 local Players = game:GetService("Players")
