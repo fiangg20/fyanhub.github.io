@@ -1,3 +1,59 @@
+local displayTime = 5
+local fadeTime = 1
+
+gui.Name = "StartupScreen"
+gui.DisplayOrder = 10
+gui.ResetOnSpawn = false
+gui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+gui.Parent = player:WaitForChild("PlayerGui")
+
+frame.Name = "MainFrame"
+frame.AnchorPoint = Vector2.new(0.5, 0.5)
+frame.BackgroundTransparency = 1
+frame.Position = UDim2.new(0.5, 0, 0.5, 0)
+frame.Size = UDim2.new(0.4, 0, 0.3, 0)
+frame.Parent = gui
+
+imageLabel.Name = "Logo"
+imageLabel.Size = UDim2.new(0.4, 0, 1, 0)
+imageLabel.Position = UDim2.new(0, 0, 0, 0)
+imageLabel.BackgroundTransparency = 1
+imageLabel.Image = "rbxassetid://1234567890"
+imageLabel.ScaleType = Enum.ScaleType.Fit
+imageLabel.Parent = frame
+
+textLabel.Name = "TitleText"
+textLabel.Size = UDim2.new(0.6, 0, 1, 0)
+textLabel.Position = UDim2.new(0.4, 0, 0, 0)
+textLabel.BackgroundTransparency = 1
+textLabel.Font = Enum.Font.GothamBlack
+textLabel.Text = "FyanHub"
+textLabel.TextColor3 = Color3.new(1, 1, 1)
+textLabel.TextSize = 24
+textLabel.TextXAlignment = Enum.TextXAlignment.Center
+textLabel.TextYAlignment = Enum.TextYAlignment.Center
+textLabel.Parent = frame
+
+local function removeGUI()
+    local fadeInfo = TweenInfo.new(
+        fadeTime,
+        Enum.EasingStyle.Quad,
+        Enum.EasingDirection.Out
+    )
+
+    local imageFade = TweenService:Create(imageLabel, fadeInfo, {ImageTransparency = 1})
+    local textFade = TweenService:Create(textLabel, fadeInfo, {TextTransparency = 1})
+    
+    imageFade:Play()
+    textFade:Play()
+    
+    imageFade.Completed:Wait()
+    gui:Destroy()
+end
+
+task.wait(displayTime)
+removeGUI()
+
 loadstring(game:HttpGet("https://github.com/fiangg20/fyanhub.github.io/raw/refs/heads/main/FpsCapper.luau"))()
 if game.CoreGui:FindFirstChild("FyanHubCore") then
 	game:GetService("StarterGui"):SetCore("SendNotification", {Title = "FyanHub ℹ️",Text = "GUI Already loaded, rejoin to re-execute",Duration = 5;})
@@ -365,6 +421,13 @@ local OpenClose = Instance.new("ImageButton")
 local UICornerOC = Instance.new("UICorner")
 local MyImage = Instance.new("ImageLabel")
 local AboutMe = Instance.new("TextLabel")
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local player = Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local imageLabel = Instance.new("ImageLabel")
+local textLabel = Instance.new("TextLabel")
 
 local function CreateToggle(Button)
 	local NewToggle = Ticket_Asset:Clone()
