@@ -1,3 +1,13 @@
+--please dont steal :(
+
+local Players = game:GetService("Players")
+local TweenService = game:GetService("TweenService")
+local player = Players.LocalPlayer
+local gui = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local imageLabel = Instance.new("ImageLabel")
+local textLabel = Instance.new("TextLabel")
+
 local displayTime = 5
 local fadeTime = 1
 
@@ -53,6 +63,8 @@ end
 
 task.wait(displayTime)
 removeGUI()
+
+wait(4)
 
 loadstring(game:HttpGet("https://github.com/fiangg20/fyanhub.github.io/raw/refs/heads/main/FpsCapper.luau"))()
 if game.CoreGui:FindFirstChild("FyanHubCore") then
@@ -421,13 +433,6 @@ local OpenClose = Instance.new("ImageButton")
 local UICornerOC = Instance.new("UICorner")
 local MyImage = Instance.new("ImageLabel")
 local AboutMe = Instance.new("TextLabel")
-local Players = game:GetService("Players")
-local TweenService = game:GetService("TweenService")
-local player = Players.LocalPlayer
-local gui = Instance.new("ScreenGui")
-local frame = Instance.new("Frame")
-local imageLabel = Instance.new("ImageLabel")
-local textLabel = Instance.new("TextLabel")
 
 local function CreateToggle(Button)
 	local NewToggle = Ticket_Asset:Clone()
