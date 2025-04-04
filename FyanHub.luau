@@ -3344,5 +3344,12 @@ end)
 Sound.SoundId = "rbxassetid://18595195017"
 Sound:Play()
 
-SendNotify("FyanHub ℹ️","Maked by Fian_gg",10)
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "FyanHub ℹ️",
+Text = "Welcome to FyanHub!", 
+Icon = "rbxassetid://111309097536603", 
+
+Button1 = "Ok",
+Duration = 30 
+})
 print("FyanHub Loaded!") 
