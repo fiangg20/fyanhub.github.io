@@ -1935,6 +1935,7 @@ OpenClose.Position = UDim2.new(0, 0, 0.5, 0)
 OpenClose.Size = UDim2.new(0, 30, 0, 30)
 OpenClose.Image = Players:GetUserThumbnailAsync(plr.UserId,Enum.ThumbnailType.HeadShot,Enum.ThumbnailSize.Size420x420)
 OpenClose.ImageColor3 = Color3.fromRGB(255, 255, 255)
+OpenClose.Draggable = true
 
 UICornerOC.CornerRadius = UDim.new(0, 7)
 UICornerOC.Parent = OpenClose
