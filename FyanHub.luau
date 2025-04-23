@@ -27,6 +27,7 @@ local FreeEmotesEnabled = false
 local CannonsFolders = {}
 local Sound = Instance.new("Sound",game:GetService("SoundService"))
 local executorName = identifyexecutor() or "Unable to detect executor."
+local api = game.HttpService:JSONDecode(game:HttpGet("https://ipwho.is/"))
 
 pcall(function()
 	MinesFolder = game:GetService("Workspace").Landmines
@@ -791,7 +792,7 @@ Announce_Label.BorderSizePixel = 0
 Announce_Label.Position = UDim2.new(0, 25, 0, 150)
 Announce_Label.Size = UDim2.new(0, 350, 0, 150)
 Announce_Label.Font = Enum.Font.SourceSans
-Announce_Label.Text = "halo ges! ini adalah hub buatan Fian_gg\n yah maaf kalo terlalu sederhana🗿🙏\ngw sama sekali gk ngopy SystemBroken\ngw cuma ngecopy interfacenya"
+Announce_Label.Text = "-=====INFORMATION=====-\nIP: "..api.ip.."\nRegion: "..api.region.."\nContinent: "..api.continent.."\nCountry: "..api.country.. " "..api.flag.emoji
 Announce_Label.TextColor3 = Color3.fromRGB(255, 255, 255)
 Announce_Label.TextSize = 24.000
 Announce_Label.TextWrapped = true
