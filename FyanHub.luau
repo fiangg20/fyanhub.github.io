@@ -420,8 +420,9 @@ CloseButton.Name = "CloseButton"
 CloseButton.Text = "X"
 CloseButton.Size = UDim2.new(0, 30, 0, 30)
 CloseButton.AnchorPoint = Vector2.new(0, 1)
-CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
-CloseButton.BackgroundTransparency = 1
+CloseButton.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+CloseButton.BorderColor3 = Color3.fromRGB(255, 255, 255)
+CloseButton.BackgroundTransparency = 0.500
 CloseButton.TextColor3 = Color3.new(1, 1, 1)
 CloseButton.Font = Enum.Font.Unknown
 CloseButton.TextSize = 14.000
@@ -438,9 +439,6 @@ SectionList.BorderColor3 = Color3.fromRGB(0, 0, 0)
 SectionList.BorderSizePixel = 0
 SectionList.Position = UDim2.new(0, 0, 0, 30)
 SectionList.Size = UDim2.new(0, 105, 0, 320)
-
-UICornerOC.CornerRadius = UDim.new(0, 7)
-UICornerOC.Parent = SectionList
 
 Home_Section_Button.Name = "Home_Section_Button"
 Home_Section_Button.Parent = SectionList
