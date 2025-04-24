@@ -426,7 +426,7 @@ CloseButton.TextColor3 = Color3.new(1, 1, 1)
 CloseButton.Font = Enum.Font.Unknown
 CloseButton.TextSize = 14.000
 CloseButton.TextScaled = true
-CloseButton.Parent = Background
+CloseButton.Parent = TitleBarLabel
 CloseButton.TextWrapped = true
 CloseButton.TextXAlignment = Enum.TextXAlignment.Right
 
