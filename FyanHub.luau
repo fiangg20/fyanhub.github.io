@@ -384,9 +384,6 @@ FyanHubCore.Name = "FyanHubCore"
 FyanHubCore.Parent = game.CoreGui
 FyanHubCore.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-UICornerOC.CornerRadius = UDim.new(0, 7)
-UICornerOC.Parent = FyanHubCore
-
 Background.Name = "Background"
 Background.Parent = FyanHubCore
 Background.AnchorPoint = Vector2.new(0.5, 0.5)
@@ -406,7 +403,7 @@ Background.Draggable = true
 
 CloseButton.Name = "CloseButton"
 CloseButton.Text = "X"
-CloseButton.Size = UDim2.new(1, 0, 0, 30)
+CloseButton.Size = UDim2.new(0, 30, 0, 30)
 CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
 CloseButton.BackgroundTransparency = 1
 CloseButton.TextColor3 = Color3.new(1, 1, 1)
