@@ -401,19 +401,6 @@ Background.TileSize = UDim2.new(0, 30, 0, 30)
 Background.Active = true
 Background.Draggable = true
 
-CloseButton.Name = "CloseButton"
-CloseButton.Text = "X"
-CloseButton.Size = UDim2.new(0, 30, 0, 30)
-CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
-CloseButton.BackgroundTransparency = 1
-CloseButton.TextColor3 = Color3.new(1, 1, 1)
-CloseButton.Font = Enum.Font.Unknown
-CloseButton.TextSize = 14.000
-CloseButton.TextScaled = true
-CloseButton.Parent = Background
-CloseButton.TextWrapped = true
-CloseButton.TextXAlignment = Enum.TextXAlignment.Right
-
 TitleBarLabel.Name = "TitleBarLabel"
 TitleBarLabel.Parent = Background
 TitleBarLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
@@ -428,6 +415,20 @@ TitleBarLabel.TextScaled = true
 TitleBarLabel.TextSize = 14.000
 TitleBarLabel.TextWrapped = true
 TitleBarLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+CloseButton.Name = "CloseButton"
+CloseButton.Text = "X"
+CloseButton.Size = UDim2.new(0, 30, 0, 30)
+CloseButton.AnchorPoint = Vector2.new(0, 1)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+CloseButton.BackgroundTransparency = 1
+CloseButton.TextColor3 = Color3.new(1, 1, 1)
+CloseButton.Font = Enum.Font.Unknown
+CloseButton.TextSize = 14.000
+CloseButton.TextScaled = true
+CloseButton.Parent = Background
+CloseButton.TextWrapped = true
+CloseButton.TextXAlignment = Enum.TextXAlignment.Right
 
 SectionList.Name = "SectionList"
 SectionList.Parent = Background
