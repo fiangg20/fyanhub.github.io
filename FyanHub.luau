@@ -418,7 +418,6 @@ TitleBarLabel.TextXAlignment = Enum.TextXAlignment.Center
 CloseButton.Name = "CloseButton"
 CloseButton.Text = "X"
 CloseButton.Size = UDim2.new(0, 30, 0, 30)
-CloseButton.AnchorPoint = Vector2.new(0, 1)
 CloseButton.BackgroundTransparency = 1
 CloseButton.TextColor3 = Color3.new(1, 1, 1)
 CloseButton.Font = Enum.Font.Unknown
