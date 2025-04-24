@@ -259,6 +259,7 @@ end
 task.wait(0.1)
 local FyanHubCore = Instance.new("ScreenGui")
 local Background = Instance.new("ImageLabel")
+local CloseButton = Instance.new("TextButton")
 local TitleBarLabel = Instance.new("TextLabel")
 local SectionList = Instance.new("Frame")
 local Home_Section_Button = Instance.new("TextButton")
@@ -403,8 +404,17 @@ Background.TileSize = UDim2.new(0, 30, 0, 30)
 Background.Active = true
 Background.Draggable = true
 
-UICornerOC.CornerRadius = UDim.new(0, 7)
-UICornerOC.Parent = Background
+CloseButton.Name = "CloseButton"
+CloseButton.Text = "X"
+CloseButton.AnchorPoint = Vector2.new(1, 0)
+CloseButton.Position = UDim2.new(1, -10, 0, 10)
+CloseButton.Size = UDim2.new(1, 0, 0, 30)
+CloseButton.BackgroundColor3 = Color3.fromRGB(255, 50, 50)
+CloseButton.BackgroundTransparency = 1
+CloseButton.TextColor3 = Color3.new(1, 1, 1)
+CloseButton.Font = Enum.Font.Unknown
+CloseButton.TextSize = 20
+CloseButton.Parent = Background
 
 TitleBarLabel.Name = "TitleBarLabel"
 TitleBarLabel.Parent = Background
@@ -2114,6 +2124,9 @@ end)
 
 Credits_Section_Button.MouseButton1Click:Connect(function()
 	ChangeSection(Credits_Section_Button)
+end)
+CloseButton.MouseButton1Click:Connect(function()
+    FyanHubCore:Destroy()
 end)
 
 
